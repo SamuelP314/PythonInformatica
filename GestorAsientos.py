@@ -160,11 +160,9 @@ while True:
     elif opcion==0:
         break
     else:
-        print("Error. Por favor, elija una opción definida.")
+        print("\nError. Por favor, elija una opción definida.\n")
 
 
 
 
 print(Asientos)
-
-#Hola Mundo
