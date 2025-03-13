@@ -23,8 +23,4 @@ def Cancelar_Reserva(Asientos):
         else:
             print("\nEl nombre no coincide con la reserva del asiento. Por favor, intentelo de nuevo.\n")
    
-<<<<<<< HEAD
     return Asientos
-=======
-    return Asientos, asientos_libres
->>>>>>> 7fe9030b52ba26b5817f4b9ccc2c4313b78359a8

@@ -20,17 +20,21 @@ Asientos = {
 
 
 while True:
-    opcion=int(input( "\n ¿Que desea hacer? \n \n 1- Reservar un nuevo asiento \n 2- Cancelar una reserva \n 3- Cambiar un asiento \n 0- Salir\n \n"))
-    if opcion==1:
-        Asientos = Reservar_Asiento(Asientos)
-    elif opcion==2:
-        Asientos = Cancelar_Reserva(Asientos)
-    elif opcion==3:
-        Asientos = Cambiar_Asiento(Asientos)
-    elif opcion==0:
-        break
-    else:
-        print("\nError. Por favor, elija una opción definida.\n")
+    try:
+        opcion=int(input( "\n ¿Que desea hacer? \n \n 1- Reservar un nuevo asiento \n 2- Cancelar una reserva \n 3- Cambiar un asiento \n 0- Salir\n \n"))
+    except:
+        opcion=_
+    match opcion:
+        case 1:
+            Asientos = Reservar_Asiento(Asientos)
+        case 2:
+            Asientos = Cancelar_Reserva(Asientos)
+        case 3:
+            Asientos = Cambiar_Asiento(Asientos)
+        case 0:
+            break
+        case _:
+            print("\nError. Por favor, elija una opción definida.\n")
 
 
 

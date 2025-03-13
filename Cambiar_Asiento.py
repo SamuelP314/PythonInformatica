@@ -1,23 +1,14 @@
 def Cambiar_Asiento(Asientos):
-<<<<<<< HEAD
-    asientos_libres = [int(Asiento) for Asiento, Estado in Asientos.items() if Estado["Estado"] == "Libre"]
-   
-    while True:
-
-
-=======
     
     asientos_libres = [int(Asiento) for Asiento, Estado in Asientos.items() if Estado["Estado"] == "Libre"]
    
     while True:
->>>>>>> 7fe9030b52ba26b5817f4b9ccc2c4313b78359a8
         asiento_elegido = int(input("\n¿Cuál es el número del asiento que quiere cambiar? \n"))
         if asiento_elegido not in asientos_libres and 0 < asiento_elegido <= 10:
             break
         elif asiento_elegido in asientos_libres:
             print("\nSe ha debido de confundir, el asiento introducido está libre. Por favor, intentelo de nuevo.\n")
         else:
-<<<<<<< HEAD
             print("\nSe ha debido de confundir, el asiento introducido no existe. Por favor, intentelo de nuevo.\n")
 
 
@@ -48,6 +39,3 @@ def Cambiar_Asiento(Asientos):
             print("\nEl asiento que ha elegido no existe. Por favor, elija un asiento válido.\n")
    
     return Asientos
-=======
-            print("\nSe ha debido de confundir, el asiento introducido no existe. Por favor, intentelo de nuevo.\n")
->>>>>>> 7fe9030b52ba26b5817f4b9ccc2c4313b78359a8
