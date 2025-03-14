@@ -1,10 +1,10 @@
 from Reservar_Asiento import *
 from Cancelar_Reserva import *
 from Cambiar_Asiento import *
-
+from Obtener_Asientos import *
 
 Asientos = {
-    "Conductor": {"Estado": "Ocupado", "Nombre": "Santi"},
+    "Conductor": {"Estado": "Si", "Nombre": "Santi"},
     1: {"Estado": "Libre", "Nombre": ""},
     2: {"Estado": "Libre", "Nombre": ""},
     3: {"Estado": "Libre", "Nombre": ""},
@@ -18,11 +18,10 @@ Asientos = {
 }
 
 
-
 while True:
     
     try:
-        opcion = int(input("\n¿Qué desea hacer?\n\n1- Reservar un nuevo asiento\n2- Cancelar una reserva\n3- Cambiar un asiento\n0- Salir\n\n"))
+        opcion = int(input("\n¿Qué desea hacer?\n\n1- Reservar un nuevo asiento\n2- Cancelar una reserva\n3- Cambiar un asiento\n4- Mostrar lista de asientos \n0- Salir\n\n"))
         
         if opcion == 1:
             Reservar_Asiento(Asientos)
@@ -30,6 +29,8 @@ while True:
             Cancelar_Reserva(Asientos)
         elif opcion == 3:
             Cambiar_Asiento(Asientos)
+        elif opcion == 4:
+            Obtener_Asientos(Asientos)
         elif opcion == 0:
             print("Saliendo del sistema...")
             break
