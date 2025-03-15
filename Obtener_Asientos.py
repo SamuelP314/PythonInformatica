@@ -14,7 +14,7 @@ def Obtener_Asientos(Asientos):
     
     while True:
         try:
-            opcion2 = int(input("\n\n1- Mostrar todos los asientos\n2- Mostrar asientos libres\n3- Mostrar asientos ocupados\n\n"))
+            opcion2 = int(input("\n¿Que desea ver?\n\n1- Mostrar todos los asientos\n2- Mostrar asientos libres\n3- Mostrar asientos ocupados\n\n"))
             if opcion2 == 1:
                 print(Asientos)
                 break
