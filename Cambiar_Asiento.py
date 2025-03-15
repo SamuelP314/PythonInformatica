@@ -1,6 +1,10 @@
 def Cambiar_Asiento(Asientos):
     
-    asientos_libres = [int(Asiento) for Asiento, Estado in Asientos.items() if Estado["Estado"] == "Libre"]
+    asientos_libres=[]
+    
+    for Asiento, Estado in Asientos.items():
+       if Estado["Estado"] == "Libre":
+           asientos_libres.append(int(Asiento))
    
     while True:
         asiento_elegido = int(input("\n¿Cuál es el número del asiento que quiere cambiar? \n"))

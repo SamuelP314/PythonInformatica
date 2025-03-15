@@ -4,7 +4,7 @@ from Cambiar_Asiento import *
 from Obtener_Asientos import *
 
 Asientos = {
-    "Conductor": {"Estado": "Si", "Nombre": "Santi"},
+    "Conductor": {"Estado": "Asignado", "Nombre": "Santi"},
     1: {"Estado": "Libre", "Nombre": ""},
     2: {"Estado": "Libre", "Nombre": ""},
     3: {"Estado": "Libre", "Nombre": ""},
@@ -39,7 +39,3 @@ while True:
     
     except ValueError:
         print("\nOpción no válida. Por favor, elija una opción definida.\n")
-
-
-
-print(Asientos)

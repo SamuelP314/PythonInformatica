@@ -12,15 +12,19 @@ def Obtener_Asientos(Asientos):
        if Estado["Estado"] == "Ocupado":
            asientos_ocupados.append(int(Asiento))
     
-    try:
-        opcion2 = int(input("\n\n1- Mostrar todos los asientos\n2- Mostrar asientos libres\n3- Mostrar asientos ocupados\n\n"))
-        if opcion2 == 1:
-            print(Asientos)
-        elif opcion2 == 2:
-            print(asientos_libres)
-        elif opcion2 == 3:
-            print(asientos_ocupados)
-        else:
+    while True:
+        try:
+            opcion2 = int(input("\n\n1- Mostrar todos los asientos\n2- Mostrar asientos libres\n3- Mostrar asientos ocupados\n\n"))
+            if opcion2 == 1:
+                print(Asientos)
+                break
+            elif opcion2 == 2:
+                print(asientos_libres)
+                break
+            elif opcion2 == 3:
+                print(asientos_ocupados)
+                break
+            else:
+                print("\nOpción no válida. Por favor, elija una opción definida.\n")
+        except ValueError:
             print("\nOpción no válida. Por favor, elija una opción definida.\n")
-    except ValueError:
-        print("\nOpción no válida. Por favor, elija una opción definida.\n")
